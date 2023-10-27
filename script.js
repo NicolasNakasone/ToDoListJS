@@ -51,5 +51,5 @@ const addItemToList = (itemText) => {
   itemButton.addEventListener("click", () => removeItemFromList(newItem));
 };
 
-toDoInput.addEventListener("keypress", handleKeyPress);
+// toDoInput.addEventListener("keypress", handleKeyPress);
 toDoForm.addEventListener("submit", handleSubmit);
