@@ -23,7 +23,6 @@ body {
   max-height: 40%;
   margin: 48px 0;
   overflow-y: auto;
-  border: 1px solid tomato
 }
 
 .to_do_item {
@@ -32,6 +31,28 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  border-bottom: 1px solid mediumpurple
-
+  border-bottom: 4px solid mediumpurple;
+  & > span {
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+  }
+  & > button {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    background-color: tomato;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+    border-radius: 4px;
+    outline: none;
+    &:focus-visible {
+      border: 2px solid brown;
+    }
+  }
 }
