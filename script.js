@@ -12,6 +12,9 @@ const handleSubmit = (event) => {
   event.preventDefault();
 
   const { value: inputValue } = toDoInput;
+
+  if (!inputValue.trim()) return;
+
   if (inputValue) {
     addItemToList(inputValue);
     toDoInput.value = "";
